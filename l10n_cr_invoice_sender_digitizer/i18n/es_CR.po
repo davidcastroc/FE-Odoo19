@@ -1,0 +1,127 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cr_invoice_sender_digitizer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-05 18:56+0000\n"
+"PO-Revision-Date: 2024-10-05 15:06-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_sender_digitizer.view_move_form_inherit1
+msgid ""
+"CONFIRMACIÓN DE ACEPTACIÓN O RECHAZO DE LOS DOCUMENTOS ELECTRÓNICOS POR "
+"PARTE DEL OBLIGADO TRIBUTARIO"
+msgstr ""
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "Could not find document type."
+msgstr "No se pudo determinar el tipo de documento."
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_sender_digitizer.view_move_form_inherit
+msgid "Crear Orden de Compra"
+msgstr ""
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "Economic Activity not found: "
+msgstr "Actividad económica no encontrada: "
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_sender_digitizer.view_move_form_inherit1
+msgid "Enviar respuesta"
+msgstr ""
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "Identification Type:  not recognized"
+msgstr "Tipo de identificación: no reconocido"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model:ir.model,name:l10n_cr_invoice_sender_digitizer.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model:ir.model,name:l10n_cr_invoice_sender_digitizer.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "No attachment was provided"
+msgstr "No se proporcionó ningún archivo adjunto"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "No journal found. Please must be create a jornal %s not fiscal."
+msgstr "No se encontró ningún diario. Debe crear un diario %s no fiscal."
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_move.py:0
+#, python-format
+msgid "Pedidos de compra"
+msgstr ""
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_sender_digitizer.view_move_form_inherit1
+msgid "Request Trackids"
+msgstr "Consutar Trackids"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#: model:ir.model.fields,field_description:l10n_cr_invoice_sender_digitizer.field_account_bank_statement_line__supplier_economic_activity_id
+#: model:ir.model.fields,field_description:l10n_cr_invoice_sender_digitizer.field_account_move__supplier_economic_activity_id
+#: model:ir.model.fields,field_description:l10n_cr_invoice_sender_digitizer.field_account_payment__supplier_economic_activity_id
+msgid "Supplier Economic Activity"
+msgstr "Actividad económica proveedor"
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "The journal in which to upload the invoice is not specified."
+msgstr "No se encontró ningún diario. Debe crear un diario %is not fiscal."
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "The uploaded file is not supported. Bust be XML file."
+msgstr "El archivo cargado no es compatible. Puede ser un archivo XML."
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "Tipo de documento desconocido: "
+msgstr ""
+
+#. module: l10n_cr_invoice_sender_digitizer
+#. odoo-python
+#: code:addons/l10n_cr_invoice_sender_digitizer/models/account_journal.py:0
+#, python-format
+msgid "Voucher Type not found: "
+msgstr "Tipo de comprobante no encontrado: "

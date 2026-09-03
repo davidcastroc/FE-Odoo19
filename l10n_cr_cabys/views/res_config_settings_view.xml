@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_config_settings_view_form111" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherited111</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="l10n_cr_invoice.res_config_settings_view_form11"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='fe_setting_container']" position="inside">
+                <setting id="cabys_setting" help="Integrate with mail client plugins">
+                    <span class="o_form_label">
+                        CABYS
+                    </span>
+                    <br/>
+                    <div class="text-muted">
+                        <a href="https://www.bccr.fi.cr/indicadores-economicos/cat%C3%A1logo-de-bienes-y-servicios">Catálogo de Bienes y Servicios</a>
+                    </div>
+                    <div class="mt8" id="action_cabys_form">
+                        <button name="%(l10n_cr_cabys.action_cabys_form)d" icon="oi-arrow-right" type="action" string="Manage CABYS" class="btn-link"/>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

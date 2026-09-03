@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_document_form_inherit" model="ir.ui.view">
+        <field name="name">ce.document.form.inherit</field>
+        <field name="model">ce.document</field>
+        <field name="inherit_id" ref="l10n_cr_invoice.view_document_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_id']" position="after">
+                <field name="order_id" invisible="not order_id"/>
+            </xpath>
+		</field>
+	</record>
+    <record id="view_document_kanban_inherit" model="ir.ui.view">
+        <field name="name">ce.document.kanban.inherit</field>
+        <field name="model">ce.document</field>
+        <field name="inherit_id" ref="l10n_cr_invoice.view_document_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_name']" position="after">
+                <field name="order_id"/>
+            </xpath>
+            <xpath expr="//div[@id='invoice_name']" position="after">
+               <div class="col-12" id="order_id">
+                    <strong><span><field name="order_id"/></span></strong>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

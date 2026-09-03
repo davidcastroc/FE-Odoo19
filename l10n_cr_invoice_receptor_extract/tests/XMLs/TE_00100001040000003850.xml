@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TiqueteElectronico xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/tiqueteElectronico">
+    <Clave>50623022500310185882000100001040000003850159841890</Clave>
+    <CodigoActividad>523202</CodigoActividad>
+    <NumeroConsecutivo>00100001040000003850</NumeroConsecutivo>
+    <FechaEmision>2025-02-23T16:48:38-06:00</FechaEmision>
+    <Emisor>
+        <Nombre>3-101-858820</Nombre>
+        <Identificacion>
+            <Tipo>02</Tipo>
+            <Numero>3101858820</Numero>
+        </Identificacion>
+        <Ubicacion>
+            <Provincia>6</Provincia>
+            <Canton>01</Canton>
+            <Distrito>01</Distrito>
+            <OtrasSenas>Jacó Centro</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>26435842</NumTelefono>
+        </Telefono>
+        <CorreoElectronico>3101858820sa@gmail.com</CorreoElectronico>
+    </Emisor>
+    <CondicionVenta>01</CondicionVenta>
+    <MedioPago>01</MedioPago>
+    <DetalleServicio>
+        <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <Codigo>2820501010000</Codigo>
+            <CodigoComercial>
+                <Tipo>03</Tipo>
+                <Codigo>194843643064</Codigo>
+            </CodigoComercial>
+            <CodigoComercial>
+                <Tipo>04</Tipo>
+                <Codigo>ABYBS00134-SEM-S</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Unidades</UnidadMedidaComercial>
+            <Detalle>Shop/8339</Detalle>
+            <PrecioUnitario>33539.82000</PrecioUnitario>
+            <MontoTotal>33539.82000</MontoTotal>
+            <Descuento>
+                <MontoDescuento>10061.95000</MontoDescuento>
+                <NaturalezaDescuento>Descuento Comercial</NaturalezaDescuento>
+            </Descuento>
+            <SubTotal>23477.87000</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>08</CodigoTarifa>
+                <Tarifa>13.00</Tarifa>
+                <Monto>3052.12310</Monto>
+            </Impuesto>
+            <ImpuestoNeto>3052.12310</ImpuestoNeto>
+            <MontoTotalLinea>26529.99310</MontoTotalLinea>
+        </LineaDetalle>
+        <LineaDetalle>
+            <NumeroLinea>2</NumeroLinea>
+            <Codigo>2922001020399</Codigo>
+            <CodigoComercial>
+                <Tipo>03</Tipo>
+                <Codigo>197095384396</Codigo>
+            </CodigoComercial>
+            <CodigoComercial>
+                <Tipo>04</Tipo>
+                <Codigo>AQYBP03093-XKKK-EA</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Unidades</UnidadMedidaComercial>
+            <Detalle>Shop/8340</Detalle>
+            <PrecioUnitario>47964.60000</PrecioUnitario>
+            <MontoTotal>47964.60000</MontoTotal>
+            <SubTotal>47964.60000</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>08</CodigoTarifa>
+                <Tarifa>13.00</Tarifa>
+                <Monto>6235.39800</Monto>
+            </Impuesto>
+            <ImpuestoNeto>6235.39800</ImpuestoNeto>
+            <MontoTotalLinea>54199.99800</MontoTotalLinea>
+        </LineaDetalle>
+        <LineaDetalle>
+            <NumeroLinea>3</NumeroLinea>
+            <Codigo>2820501010000</Codigo>
+            <CodigoComercial>
+                <Tipo>03</Tipo>
+                <Codigo>840255751391</Codigo>
+            </CodigoComercial>
+            <CodigoComercial>
+                <Tipo>04</Tipo>
+                <Codigo>P12311101-BLUE-M</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Unidades</UnidadMedidaComercial>
+            <Detalle>Shop/8341</Detalle>
+            <PrecioUnitario>29557.52000</PrecioUnitario>
+            <MontoTotal>29557.52000</MontoTotal>
+            <SubTotal>29557.52000</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>08</CodigoTarifa>
+                <Tarifa>13.00</Tarifa>
+                <Monto>3842.47760</Monto>
+            </Impuesto>
+            <ImpuestoNeto>3842.47760</ImpuestoNeto>
+            <MontoTotalLinea>33399.99760</MontoTotalLinea>
+        </LineaDetalle>
+        <LineaDetalle>
+            <NumeroLinea>4</NumeroLinea>
+            <Codigo>2820204030000</Codigo>
+            <CodigoComercial>
+                <Tipo>03</Tipo>
+                <Codigo>197095576876</Codigo>
+            </CodigoComercial>
+            <CodigoComercial>
+                <Tipo>04</Tipo>
+                <Codigo>AQYZT09904-KVJ0-L</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Unidades</UnidadMedidaComercial>
+            <Detalle>Shop/8342</Detalle>
+            <PrecioUnitario>18230.09000</PrecioUnitario>
+            <MontoTotal>18230.09000</MontoTotal>
+            <SubTotal>18230.09000</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>08</CodigoTarifa>
+                <Tarifa>13.00</Tarifa>
+                <Monto>2369.91170</Monto>
+            </Impuesto>
+            <ImpuestoNeto>2369.91170</ImpuestoNeto>
+            <MontoTotalLinea>20600.00170</MontoTotalLinea>
+        </LineaDetalle>
+        <LineaDetalle>
+            <NumeroLinea>5</NumeroLinea>
+            <Codigo>2820204030000</Codigo>
+            <CodigoComercial>
+                <Tipo>03</Tipo>
+                <Codigo>196134753834</Codigo>
+            </CodigoComercial>
+            <CodigoComercial>
+                <Tipo>04</Tipo>
+                <Codigo>A5722406-WBH-L</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Unidades</UnidadMedidaComercial>
+            <Detalle>Shop/8343</Detalle>
+            <PrecioUnitario>17522.12000</PrecioUnitario>
+            <MontoTotal>17522.12000</MontoTotal>
+            <SubTotal>17522.12000</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>08</CodigoTarifa>
+                <Tarifa>13.00</Tarifa>
+                <Monto>2277.87560</Monto>
+            </Impuesto>
+            <ImpuestoNeto>2277.87560</ImpuestoNeto>
+            <MontoTotalLinea>19799.99560</MontoTotalLinea>
+        </LineaDetalle>
+        <LineaDetalle>
+            <NumeroLinea>6</NumeroLinea>
+            <Codigo>2826900000100</Codigo>
+            <CodigoComercial>
+                <Tipo>03</Tipo>
+                <Codigo>196329138088</Codigo>
+            </CodigoComercial>
+            <CodigoComercial>
+                <Tipo>04</Tipo>
+                <Codigo>ABYHA00374-BLK-EA</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Unidades</UnidadMedidaComercial>
+            <Detalle>Shop/8344</Detalle>
+            <PrecioUnitario>16283.19000</PrecioUnitario>
+            <MontoTotal>16283.19000</MontoTotal>
+            <SubTotal>16283.19000</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>08</CodigoTarifa>
+                <Tarifa>13.00</Tarifa>
+                <Monto>2116.81470</Monto>
+            </Impuesto>
+            <ImpuestoNeto>2116.81470</ImpuestoNeto>
+            <MontoTotalLinea>18400.00470</MontoTotalLinea>
+        </LineaDetalle>
+    </DetalleServicio>
+    <ResumenFactura>
+        <TotalServGravados>0.00000</TotalServGravados>
+        <TotalServExentos>0.00000</TotalServExentos>
+        <TotalMercanciasGravadas>163097.34000</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>0.00000</TotalMercanciasExentas>
+        <TotalGravado>163097.34000</TotalGravado>
+        <TotalExento>0.00000</TotalExento>
+        <TotalExonerado>0.00000</TotalExonerado>
+        <TotalVenta>163097.34000</TotalVenta>
+        <TotalDescuentos>10061.95000</TotalDescuentos>
+        <TotalVentaNeta>153035.39000</TotalVentaNeta>
+        <TotalImpuesto>19894.60000</TotalImpuesto>
+        <TotalComprobante>172929.99000</TotalComprobante>
+    </ResumenFactura>
+<ds:Signature Id="id-9cd78264-cf2c-d821-ba65-1485c111a29a">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="Reference-a422e602-1332-2845-b85a-e122de53269f" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>cj8AaI+xRLD1xpsDtYAWQTiDAWGMMOec/ei987EAKsA=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="ReferenceKeyInfo" URI="#KeyInfoId-id-9cd78264-cf2c-d821-ba65-1485c111a29a">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>m9pqLuCCbbrn46Au5iM+AYxl0ZrdaFUNsoYF0p1W0Is=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#SignedProperties-id-9cd78264-cf2c-d821-ba65-1485c111a29a" Type="http://uri.etsi.org/01903#SignedProperties">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>4YR2wm+bL77WFqgDDtVfodfz+lV+SLOsejtEuiE141A=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>h9q5aSInc1n3ws7T6I63Ndo1GzMo5dTEuE7YdW2zzBO4iT/fj4VFYsk8JtLo+EJQfIoqIredBRHQ5Q9n6xhltTjOkBTZaygO81yYGN5xub4mGj2DSoUKd93DkBpafpaE9tojxPgyGsuO031hy3YYvxQzMyCy76mVsBpNBHR8uhDjwKGaH1qWUFaM5rksuT/N3Em0CbxJEQ6KcRXBM2VYz5f2h+6SJ7+cgufHLo5oNtI9CNU3++ealmQ9w3FjozuqXFlLMKz0zKlRa2ea3yUdYaZuh6a71E3B6nNlfNjP6A97oMd7mHO2QlS0HQ6qRyrOhJgDkUQeUMBYkFFm+ei0qA==</ds:SignatureValue>
+<ds:KeyInfo Id="KeyInfoId-id-9cd78264-cf2c-d821-ba65-1485c111a29a">
+<ds:X509Data>
+<ds:X509Certificate>MIIFHjCCAwagAwIBAgIGAY/uhhSLMA0GCSqGSIb3DQEBCwUAMFoxCzAJBgNVBAYTAkNSMR8wHQYDVQQKDBZNSU5JU1RFUklPIERFIEhBQ0lFTkRBMQwwCgYDVQQLDANER1QxHDAaBgNVBAMME0NBIFBFUlNPTkEgSlVSSURJQ0EwHhcNMjQwNjA2MTcwODM1WhcNMjgwNjA1MTcwODM1WjB5MRkwFwYDVQQFExBDUEotMy0xMDEtODU4ODIwMQswCQYDVQQGEwJDUjEZMBcGA1UECgwQUEVSU09OQSBKVVJJRElDQTEMMAoGA1UECwwDQ1BKMSYwJAYDVQQDDB0zLTEwMS04NTg4MjAgU09DSUVEQUQgQU5PTklNQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJcjugak9GGjUrmTB5wZECAnII2wuYNYh2EaU5EI4hA6dxFZeRGCr0qO/ip9tIO8V+CFfdzEDp83yppb4F3EPYevQ4rUCTmNVy4uZQ91T1rE+d6jVVTW7lalYz2nm67l1a7B13G0FjmpLGpHirsEY4Z+KsfXIw8/i8yi7G/7SIw1T0uNth+NQSGljT5O4BWdBmEu7d+VnmyHUcgmyozTEHthTkQpVFtzpg997WqgPC8dEuTH9zKDn+VYo8rv9uHc7gIJERSfYbpKzzEgw2MIhow8KTvshZZZzknvshm+UiShwN5Jedc4U3pU5dUNk1i47VDftb6B1g5XP075WXx7kzcCAwEAAaOByjCBxzAfBgNVHSMEGDAWgBQ7bVf11nzpnhACIEHjvRrMz7NOlTAdBgNVHQ4EFgQUhIMEcsFqgJ6SVp5fR/z/3lVqvg0wCwYDVR0PBAQDAgbAMBMGA1UdJQQMMAoGCCsGAQUFBwMEMGMGCCsGAQUFBwEBBFcwVTBTBggrBgEFBQcwAoZHaHR0cHM6Ly9wa2kuY29tcHJvYmFudGVzZWxlY3Ryb25pY29zLmdvLmNyL3Byb2QvaW50ZXJtZWRpYXRlLXBqLXBlbS5jcnQwDQYJKoZIhvcNAQELBQADggIBAKhbK1TCa2Mk5eDhKf5lq8IU/VBl3CqiUo7TmutUeUzfGXXC758guc8HF2xIas5XWY82Avbo4Y0VUT0nc2PDp3GZ377F8Xw3l2/9P5qEl6Ea+5ZSEvrD5LIPeT7qEtLHjyl3pijqqPcJvHO9hDft4xqnKu8sGvLHVtNBAvsLVJ3gmMIQl1hE/dSDDbeuB+4+hQAfHC6BJJWci5n/Xud6uRXEIZzzq22CFxq+RTLI2kcFaJfyFSStdgfXErxlk8OVF76Vp2DkR2tirO081OBQzs3di+gk0b0MBxjDPOFtDSPeuEdl+gKnQ9TLAiVkrilEIWOyyrdg08gH+PoazabxMItAMrDHZ+gfZpJgGspDUJCurzT5L0OGFEKzZ6FQneQzoCYRD2Ur9xf8Rtl9jbmcpaNKP1QkPts6rmCJ8YU1Eet03YyqEyNDiWk4YTDpYAxx5J64fUWHzNgt0sifIaYTCglWdC3yXJEyHvsDNuYS3ShGKymDXtPJJyWls0QT4pRwwuXHmnkseTWuk6SXd/CQ68FiIl7MYOzHD2nOUlsWUjNXcubRS9yojZvTz2ZUn+++9borkdIx3LpRVS798GC8QrcHoXn/RfgcYyWThvXO3sZtBLqLmMfoJTP/pEXlhNz5VRnMM/KksJq+HN54qCCmwl8ozTG6KSkFD61L6oavYkzD</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>lyO6BqT0YaNSuZMHnBkQICcgjbC5g1iHYRpTkQjiEDp3EVl5EYKvSo7+Kn20g7xX4IV93MQOnzfKmlvgXcQ9h69DitQJOY1XLi5lD3VPWsT53qNVVNbuVqVjPaebruXVrsHXcbQWOaksakeKuwRjhn4qx9cjDz+LzKLsb/tIjDVPS422H41BIaWNPk7gFZ0GYS7t35WebIdRyCbKjNMQe2FORClUW3OmD33taqA8Lx0S5Mf3MoOf5Vijyu/24dzuAgkRFJ9hukrPMSDDYwiGjDwpO+yFllnOSe+yGb5SJKHA3kl51zhTelTl1Q2TWLjtUN+1voHWDlc/TvlZfHuTNw==</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-9cd78264-cf2c-d821-ba65-1485c111a29a" Id="XadesObjects"><xades:SignedProperties Id="SignedProperties-id-9cd78264-cf2c-d821-ba65-1485c111a29a"><xades:SignedSignatureProperties><xades:SigningTime>2025-02-17T13:28:47.818695+00:00</xades:SigningTime>
+<xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>hzhawiUSQL5qS+ccEEbPoH37JmU=</ds:DigestValue>
+</xades:CertDigest>
+<xades:IssuerSerial><ds:X509IssuerName>CN=CA PERSONA JURIDICA,OU=DGT,O=MINISTERIO DE HACIENDA,C=CR</ds:X509IssuerName>
+<ds:X509SerialNumber>1717693715595</ds:X509SerialNumber>
+</xades:IssuerSerial>
+</xades:Cert>
+</xades:SigningCertificate>
+<xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://tribunet.hacienda.go.cr/docs/esquemas/2016/v4.1/Resolucion_Comprobantes_Electronicos_DGT-R-48-2016.pdf</xades:Identifier>
+<xades:Description/>
+</xades:SigPolicyId>
+<xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>vPjYEG5pdxOi+6DB29+KqF3I4VOcMEaixzE3d2iUiJk=</ds:DigestValue>
+</xades:SigPolicyHash>
+</xades:SignaturePolicyId>
+</xades:SignaturePolicyIdentifier>
+</xades:SignedSignatureProperties>
+<xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#Reference-a422e602-1332-2845-b85a-e122de53269f"><xades:MimeType>text/xml</xades:MimeType>
+<xades:Encoding>UTF-8</xades:Encoding>
+</xades:DataObjectFormat>
+</xades:SignedDataObjectProperties>
+</xades:SignedProperties>
+</xades:QualifyingProperties>
+</ds:Object>
+</ds:Signature></TiqueteElectronico>

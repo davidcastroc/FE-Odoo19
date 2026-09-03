@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="api_expiration_server.ButtonItem" owl="1">
+        <button t-if="!isCellHidden" t-esc="props.count_items" type="button"
+                class="btn btn-primary o_lunch_activity" t-attf-data-state="{{ props.state }}"/>
+    </t>
+</templates>

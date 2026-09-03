@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_mh_wizard,res.partner.mh.wizard,model_res_partner_mh_wizard,base.group_user,1,1,1,1
+access_res_partner_mh_activity_wizard,res.partner.mh.activity.wizard,model_res_partner_mh_activity_wizard,base.group_user,1,1,1,1
+access_res_partner_mh_registry_wizard,res.partner.mh.registry.wizard,model_res_partner_mh_registry_wizard,base.group_user,1,1,1,1

@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cr_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 14:53+0000\n"
+"PO-Revision-Date: 2025-08-21 14:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__07
+msgid "Descuento Comercial"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__03
+msgid "Descuento por Bonificación"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__01
+msgid "Descuento por Regalía"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__02
+msgid "Descuento por Regalía IVA Cobrado al Cliente"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__05
+msgid "Descuento por Temporada (estacional)"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__08
+msgid "Descuento por frecuencia"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__04
+msgid "Descuento por volumen"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__06
+msgid "Descuento promocional"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__09
+msgid "Descuento sostenido"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields,field_description:l10n_cr_sale.field_sale_order_line__l10n_cr_discount_type_code
+msgid "Discount Type Code"
+msgstr "Código tipo de descuento"
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields,field_description:l10n_cr_sale.field_sale_order_line__l10n_cr_has_exoneration
+msgid "Has Exoneration"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields,help:l10n_cr_sale.field_sale_order_line__l10n_cr_discount_type_code
+msgid "NOTA 20: ANEXOS y ESTRCUTURAS"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model.fields.selection,name:l10n_cr_sale.selection__sale_order_line__l10n_cr_discount_type_code__10
+msgid "Otros descuentos"
+msgstr ""
+
+#. module: l10n_cr_sale
+#: model:ir.model,name:l10n_cr_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de la orden de venta"

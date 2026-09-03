@@ -1,0 +1,174 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cr_address
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-27 20:56+0000\n"
+"PO-Revision-Date: 2024-05-27 20:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cr_address
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_partner_form1
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_res_country_neighborhood_form
+msgid "Barrio"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.actions.act_window,name:l10n_cr_address.action_res_country_neighborhood
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_partner__neighborhood_id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_users__neighborhood_id
+#: model:ir.ui.menu,name:l10n_cr_address.menu_res_country_neighborhood
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_res_country_neighborhood_tree
+msgid "Barrios"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_partner_form1
+msgid "Canton"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.actions.act_window,name:l10n_cr_address.action_res_country_county
+#: model:ir.ui.menu,name:l10n_cr_address.menu_res_country_county
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_res_country_county_tree
+msgid "Cantones"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__county_id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_partner__canton_id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_users__canton_id
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_res_country_county_form
+msgid "Cantón"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_partner__country_id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_users__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_country_county
+msgid "Country County"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_country_district
+msgid "Country District"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_country_neighborhood
+msgid "Country Neighborhood"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__create_uid
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__create_uid
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__create_date
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__create_date
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__code
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__code
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__code
+msgid "Código"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__display_name
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__display_name
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__district_id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_partner__distrito_id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_users__distrito_id
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_partner_form1
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_res_country_district_form
+msgid "Distrito"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.actions.act_window,name:l10n_cr_address.action_res_country_district
+#: model:ir.ui.menu,name:l10n_cr_address.menu_res_country_district
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_res_country_district_tree
+msgid "Distritos"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_partner__fax
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_users__fax
+msgid "Fax"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__id
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county____last_update
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district____last_update
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__write_uid
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__write_uid
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__write_date
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__write_date
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__name
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_district__name
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_neighborhood__name
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_partner__commercial_name
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_users__commercial_name
+msgid "Nombre comercial"
+msgstr ""
+
+#. module: l10n_cr_address
+#: model:ir.model.fields,field_description:l10n_cr_address.field_res_country_county__state_id
+#: model_terms:ir.ui.view,arch_db:l10n_cr_address.view_partner_form1
+msgid "Province"
+msgstr "Provincia"

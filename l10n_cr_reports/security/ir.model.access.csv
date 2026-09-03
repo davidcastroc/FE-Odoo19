@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+l10n_cr_reports.access_l10n_cr_report_details_wizard,access_l10n_cr_report_details_wizard,l10n_cr_reports.model_l10n_cr_report_details_wizard,base.group_user,1,1,1,1
+l10n_cr_reports.access_account_report_iva_analysis,access_account_report_iva_analysis,l10n_cr_reports.model_account_report_iva_analysis,base.group_user,1,0,0,0

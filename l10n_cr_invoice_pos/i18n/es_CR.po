@@ -1,0 +1,565 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cr_invoice_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-03 14:30+0000\n"
+"PO-Revision-Date: 2024-07-03 10:31-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "% Descuento"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "% de descuento"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.actions.report,print_report_name:l10n_cr_invoice_pos.pos_report_ticket
+msgid "'Orden - %s' % (object.name)"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "***COMPROBANTE COPIA***"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "*Nota:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid ""
+"<br/>\n"
+"                                    CONSECUTIVO:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid ""
+"<br/>[*] = PRODUCTOS CON I.V.A.\n"
+"                        <br/>\n"
+"                        <br/>\n"
+"                        <br/>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>COMMENT:</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>Descuento</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>FISCAL POSITION:</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>I.V.A. devuelto</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>SUBTOTAL</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>TAX</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "<strong>TOTAL</strong>"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/store/models.js:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/store/models.js:0
+#, python-format
+msgid "There are products without CABYS."
+msgstr "Existen productos sin CABYS."
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "Autocompletar contacto dado el No. Ident."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "Barrio"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "CEDULA:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "CLAVE MODIFICADA:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "CLAVE NUMERICA:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "CLAVE NUMÉRICA:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+#, python-format
+msgid "CLIENTE:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "CONSECUTIVO:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Cambio:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "Cantón"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__clave_cr
+msgid "Clave"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__QR_code
+msgid "Code QR"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "Con un"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/ticket_screen/TicketScreen.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/ticket_screen/TicketScreen.xml:0
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__number
+#, python-format
+msgid "Consecutive"
+msgstr "Consecutivo"
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__number
+msgid "Consecutivo"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Ctd"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/product_screen/action_pad/ActionpadWidget.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/product_screen/action_pad/ActionpadWidget.xml:0
+#, python-format
+msgid "Customer"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__reference_code_id
+msgid "Reference Code"
+msgstr "Código de referencia"
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "DIRECCION:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "Descripción<br/>Cant./Precio Unit."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Descuento:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "Distrito"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__document_id
+msgid "Document"
+msgstr "Documento"
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model,name:l10n_cr_invoice_pos.model_ce_document
+msgid "Documento Electronico"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__pos_order_id
+msgid "Documento de referencia"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+#, python-format
+msgid "EMAIL:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.constraint,message:l10n_cr_invoice_pos.constraint_pos_order_doc_company_uniq
+msgid "El documento de Comprobante Electronico debe ser único por compañia"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid ""
+"Emitida conforme a lo establecido en la Resolución de Facturación "
+"Electrónica, DGT-R-033-2019 del 20 de junio de 2019 de la Dirección "
+"General de Tributación Directa."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__ind_state
+msgid "Hacienda State"
+msgstr "Estado Hacienda"
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "FECHA FACTURA:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__date_issue
+msgid "Fecha y Hora Creacion documento"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_config__l10n_cr_fiscal_journal
+msgid "Fiscal POS"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "IDENTIFICACION:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+#, python-format
+msgid "Logo"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Monto"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "MÉTODO DE PAGO:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "No. Ident."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "None"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.js:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.js:0
+#, python-format
+msgid "Not found payer with this RNC or already exists!."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-python
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/models/pos_config.py:0
+#: code:addons/l10n_cr_invoice_pos/models/pos_config.py:0
+#, python-format
+msgid "Not found terminal for this TPV."
+msgstr "No se ha encontrado una terminal para esta TPV."
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Nro. IDENTIFICACION:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "ORDEN COMPRA:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_ce_document__order_id
+msgid "Order POS"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model,name:l10n_cr_invoice_pos.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración del punto de venta"
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model,name:l10n_cr_invoice_pos.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Órdenes del Punto de venta"
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model,name:l10n_cr_invoice_pos.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sesión del punto de venta"
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Precio"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Producto"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "RUT:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.view_pos_pos_form
+msgid "Recreate Document"
+msgstr "Recrear documento"
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__referencia_nc
+msgid "Referencia Nc"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Subtotal:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "TEL."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "TELEFONO:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "TOTAL"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_config__terminal_id
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.view_pos_config_electronic_invoice_form
+msgid "Terminal"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.actions.report,name:l10n_cr_invoice_pos.pos_report_ticket
+msgid "Ticket"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.xml:0
+#, python-format
+msgid "Tipo Ident."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model:ir.model.fields,field_description:l10n_cr_invoice_pos.field_pos_order__voucher_type_id
+msgid "Tipo de documento"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.view_pos_order_tree
+msgid "Total tax"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "Total:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "USUARIO:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.js:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/partner_list/partner_editor/PartnerDetailsEdit.js:0
+#, python-format
+msgid "Unable to connection."
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid "VENDEDOR:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/store/models.js:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/store/models.js:0
+#, python-format
+msgid "Validation Error"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#. odoo-javascript
+#: code:addons/branch/l10n_cr/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#: code:addons/l10n_cr_invoice_pos/static/src/app/screens/receipt_screen/OrderReceipt.xml:0
+#, python-format
+msgid "WEB:"
+msgstr ""
+
+#. module: l10n_cr_invoice_pos
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_pos.report_ticket_pos
+msgid ""
+"______________________________\n"
+"                            <br/>\n"
+"                            RECIBIDO CONFORME\n"
+"                            <br/>\n"
+"                            <b>Emitida conforme lo establecido en la "
+"Resolución de Facturación Electrónica,\n"
+"                                DGT-R-033-2019 del 20 de junio de 2019 "
+"de la Dirección General de Tributación Directa.\n"
+"                            </b>"
+msgstr ""

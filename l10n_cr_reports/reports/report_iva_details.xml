@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_ivadetails">
+        <t t-set="company" t-value="env.company"/>
+        <div class="oe_structure"></div>
+        <t t-call="web.html_container">
+            <t t-call="web.internal_layout">
+                <div class="page">
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <strong>Start Date:</strong>
+                            <br/>
+                            <span t-out="date_start" t-options="{'widget': 'date'}">2-03-2000 9:00 AM</span>
+
+                        </div>
+                        <div class="col-4">
+                            <strong>End date:</strong>
+                            <br/>
+                            <span t-out="date_stop" t-options="{'widget': 'date'}">Demo 3-03-2000 5:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Ventas del periodo</h4>
+                    </div>
+                    <div>
+                        <t t-foreach="economic_activities" t-as="economic_activity">
+                            <p t-out="economic_activity.name"/>
+                            <table class="table table-sm table-striped mb5">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Detalle Bienes y Servicios
+                                        </th>
+                                        <th>
+                                            Base imponible 0,5%
+                                        </th>
+                                        <th>
+                                            Debito fiscal IVA 0,5%
+                                        </th>
+                                        <th>
+                                            Base imponible 1%
+                                        </th>
+                                        <th>
+                                            Debito fiscal IVA 1%
+                                        </th>
+                                        <th>
+                                            Base imponible 2%
+                                        </th>
+                                        <th>
+                                            Debito fiscal IVA 2%
+                                        </th>
+                                        <th>
+                                            Base imponible 4%
+                                        </th>
+                                        <th>
+                                            Debito fiscal IVA 4%
+                                        </th>
+                                        <th>
+                                            Base imponible 8%
+                                        </th>
+                                        <th>
+                                            Debito fiscal IVA 8%
+                                        </th>
+                                        <th>
+                                            Base imponible 13%
+                                        </th>
+                                        <th>
+                                            Debito fiscal IVA 13%
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>Bienes</span>
+                                        </td>
+
+                                        <t t-set="sales_iva" t-value="get_invoice_lines(economic_activity.id, 'consu', date_start, date_stop)"/>
+
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_05'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_05'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_1'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_1'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_2'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_2'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_4'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_4'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_8'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_8'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_13'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_13'] for a in sales_iva])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Servicios</span>
+                                        </td>
+                                        <t t-set="sales_iva_service" t-value="get_invoice_lines(economic_activity.id, 'service', date_start, date_stop)"/>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_05'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_05'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_1'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_1'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_2'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_2'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_4'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_4'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_8'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_8'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_base_13'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            <span>
+                                                <t t-out="sum([a['taxed_amount_13'] for a in sales_iva_service])"
+                                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </t>
+                    </div>
+                    <div class="mt-3 col-6">
+                        <table class="table table-sm table-borderless mb-0">
+                            <tr class="border-black o_subtotal">
+                                <td>
+                                    <strong>Total IVA</strong>
+                                </td>
+                                <td class="text-end">
+                                    <t t-set="iva_total" t-value="sum([a['taxed_amount_05'] + a['taxed_amount_1'] +
+                                    a['taxed_amount_2'] + a['taxed_amount_4'] + a['taxed_amount_8'] +
+                                    a['taxed_amount_13'] for a in get_invoice_lines(False, False, date_start, date_stop)])"/>
+                                    <t t-out="iva_total"
+                                       t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mt-3">
+                        <h4>Ventas exentas (Art.8)</h4>
+                    </div>
+                    <div class="mt-3 col-6">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Bienes y Servicios
+                                    </th>
+                                    <th>
+                                        Exento Locales
+                                    </th>
+                                    <th>
+                                        Exportación
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Bienes</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['exempt_amount'] for a in get_invoices_exempt('consu', 'internal', date_start, date_stop)])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['exempt_amount'] for a in get_invoices_exempt('service', 'external', date_start, date_stop)])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Servicios</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['exempt_amount'] for a in get_invoices_exempt(0, 'internal', date_start, date_stop)])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['exempt_amount'] for a in get_invoices_exempt(0, 'external', date_start, date_stop)])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-3">
+                        <h4>Exoneraciones</h4>
+                    </div>
+                    <div class="mt-3 col-6">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Exoneraciones
+                                    </th>
+                                    <th>
+                                        Importe
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Exoneraciones del periodo</span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="get_amount_exoneracion(date_start, date_stop)" t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Compras del periodo</h4>
+                    </div>
+                    <div>
+                        <table class="table table-sm table-striped mb5">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Detalle Bienes y Servicios
+                                    </th>
+                                    <th>
+                                        Base imponible 0,5%
+                                    </th>
+                                    <th>
+                                        Credito fiscal IVA 0,5%
+                                    </th>
+                                    <th>
+                                        Base imponible 1%
+                                    </th>
+                                    <th>
+                                        Credito fiscal IVA 1%
+                                    </th>
+                                    <th>
+                                        Base imponible 2%
+                                    </th>
+                                    <th>
+                                        Credito fiscal IVA 2%
+                                    </th>
+                                    <th>
+                                        Base imponible 4%
+                                    </th>
+                                    <th>
+                                        Credito fiscal IVA 4%
+                                    </th>
+                                    <th>
+                                        Base imponible 8%
+                                    </th>
+                                    <th>
+                                        Credito fiscal IVA 8%
+                                    </th>
+                                    <th>
+                                        Base imponible 13%
+                                    </th>
+                                    <th>
+                                        Credito fiscal IVA 13%
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>Bienes</span>
+                                    </td>
+                                    <t t-set="purchase_iva" t-value="get_invoice_lines(False, 'consu', date_start, date_stop, ['in_invoice', 'in_refund'])"/>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_05'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_05'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_1'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_1'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_2'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_2'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_4'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_4'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_8'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_8'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_13'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_13'] for a in purchase_iva])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Servicios</span>
+                                    </td>
+                                    <t t-set="purchase_iva_service" t-value="get_invoice_lines(False, 'service', date_start, date_stop, ['in_invoice', 'in_refund'])"/>
+                                     <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_05'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_05'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_1'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_1'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_2'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_2'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_4'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_8'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_8'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_8'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_base_13'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                    <td class="text-end">
+                                        <span>
+                                            <t t-out="sum([a['taxed_amount_13'] for a in purchase_iva_service])"
+                                               t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-5 col-6">
+                        <table class="table table-sm table-borderless mb-0">
+                            <tr class="border-black o_subtotal">
+                                <td>
+                                    <strong>Total credito fiscal</strong>
+                                </td>
+                                <td class="text-end">
+                                    <t t-set="credit_total" t-value="sum([a['taxed_amount_05'] + a['taxed_amount_1'] + a['taxed_amount_2'] + a['taxed_amount_4'] + a['taxed_amount_8'] + a['taxed_amount_13'] for a in get_invoice_lines(False, False, date_start, date_stop, ['in_invoice', 'in_refund'])])"/>
+                                    <t t-out="credit_total"
+                                       t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h4>Determinación del impuesto por operaciones gravadas del periodo</h4>
+                </div>
+                <div class="mt-3 col-6">
+                    <table class="table table-sm table-borderless mb-0">
+                        <tr class="border-black o_subtotal">
+                            <td>
+                                <strong>Total debito fiscal IVA</strong>
+                            </td>
+                            <td class="text-end">
+                                <t t-out="iva_total"
+                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                            </td>
+                        </tr>
+                        <tr class="border-black o_subtotal">
+                            <td>
+                                <strong>Total de créditos del periodo</strong>
+                            </td>
+                            <td class="text-end">
+                                <t t-out="credit_total"
+                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                            </td>
+                        </tr>
+                        <tr class="border-black o_subtotal">
+                            <td>
+                                <strong>Saldo a favor del periodo</strong>
+                            </td>
+                            <td class="text-end">
+                                <t t-out="iva_total - credit_total"
+                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                            </td>
+                        </tr>
+                        <tr class="border-black o_subtotal">
+                            <td>
+                                <strong>Impuesto a pagar IVA del periodo</strong>
+                            </td>
+                            <td class="text-end">
+                                <t t-out="credit_total + iva_total"
+                                   t-options="{'widget': 'monetary', 'display_currency': company_currency_id}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

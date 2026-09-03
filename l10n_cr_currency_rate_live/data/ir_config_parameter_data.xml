@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="l10n_cr_currency_update_api_url" model="ir.config_parameter">
+        <field name="key">currency.api.url</field>
+        <field name="value">https://api.hacienda.go.cr/indicadores/tc/</field>
+    </record>
+</odoo>

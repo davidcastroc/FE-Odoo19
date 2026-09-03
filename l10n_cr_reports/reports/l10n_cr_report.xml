@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="iva_details_report" model="ir.actions.report">
+        <field name="name">IVA Details</field>
+        <field name="model">pos.session</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_cr_reports.report_ivadetails</field>
+        <field name="binding_view_types">form</field>
+    </record>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="purchase_order_form_inherit11" model="ir.ui.view">
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_document_reference" class="oe_stat_button" icon="fa-book" type="object"
+                        help="View Imported Invoices" invisible="invoice_import_count == 0">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value">
+                            <field name="invoice_import_count"/>
+                        </span>
+                        <span class="o_stat_text">Facturas importadas</span>
+                    </div>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

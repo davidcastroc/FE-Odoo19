@@ -1,0 +1,6 @@
+.pos .pos-sale-ticket {
+    font-weight: bold;
+}
+.pos .pos-sale-ticket table td {
+    vertical-align: top;
+}

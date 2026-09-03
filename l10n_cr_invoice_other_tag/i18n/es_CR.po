@@ -1,0 +1,86 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cr_invoice_other_tag
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-02 18:12+0000\n"
+"PO-Revision-Date: 2025-08-02 18:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_delivery_date
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_delivery_date
+msgid "Date of delivery associated with the invoice."
+msgstr ""
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_delivery_date
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_delivery_date
+msgid "Delivery Date"
+msgstr "Fecha Orden"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model,name:l10n_cr_invoice_other_tag.model_ce_document
+msgid "Electronic Voucher"
+msgstr "Documento Electrónico"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model,name:l10n_cr_invoice_other_tag.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_order_number
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_order_number
+msgid "Order Number"
+msgstr "Número Orden"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_order_number
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_order_number
+msgid "Order number associated with the invoice."
+msgstr ""
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_pv_number
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_pv_number
+msgid "PV Number"
+msgstr "Enviar GLN"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_pv_number
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_pv_number
+msgid "Point of Sales number associated with the invoice."
+msgstr ""
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_reception_number
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_reception_number
+msgid "Reception Number"
+msgstr "Numero Recepción"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_reception_number
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_reception_number
+msgid "Reception number associated with the invoice."
+msgstr ""
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_salesman_number
+#: model:ir.model.fields,field_description:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_salesman_number
+msgid "Salesman Number"
+msgstr "Número Vendedor"
+
+#. module: l10n_cr_invoice_other_tag
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_bank_statement_line__l10n_cr_salesman_number
+#: model:ir.model.fields,help:l10n_cr_invoice_other_tag.field_account_move__l10n_cr_salesman_number
+msgid "Salesman number associated with the invoice."
+msgstr ""

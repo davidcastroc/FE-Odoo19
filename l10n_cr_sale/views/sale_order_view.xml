@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit" model="ir.ui.view">
+        <field name="name">view.order.form.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/notebook/page/field[@name='order_line']/list/field[@name='discount']" position="after">
+                <field name="l10n_cr_has_exoneration" optional="hide"/>
+                <field name="l10n_cr_discount_type_code" optional="hide" groups="sale.group_discount_per_so_line"
+                    required="discount != 0"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

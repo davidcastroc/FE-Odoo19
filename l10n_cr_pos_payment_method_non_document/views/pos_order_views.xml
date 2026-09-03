@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_pos_pos_form_inherited" model="ir.ui.view">
+        <field name="name">view.pos.pos.form.inherited</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+        <field name="model">pos.order</field>
+        <field name="arch" type="xml">
+            <button name="refund" position="after">
+              <button name="create_from_non_document" type="object" string="Create Document" class="oe_highlight"
+                      groups="point_of_sale.group_pos_manager" invisible="document_id != False"/>
+          </button>
+        </field>
+    </record>
+</odoo>

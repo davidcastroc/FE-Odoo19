@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form1" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit1</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="country_id" position="after">
+                <field name="canton_id" class="o_address_canton" placeholder="Canton" 
+                    domain="[('state_id', '=', state_id)]" invisible="'CR' not in fiscal_country_codes"
+                    options="{'no_open': 1,'no_create': 1, 'no_create_edit': 1}" context="{'state_id': state_id}"/>
+                <field name="distrito_id" class="o_address_distrito" placeholder="Distrito" 
+                    domain="[('county_id', '=', canton_id)]" invisible="'CR' not in fiscal_country_codes"
+                    options="{'no_open': 1,'no_create': 1, 'no_create_edit': 1}" context="{'county_id': canton_id}"/>
+                <field name="neighborhood_id" class="o_address_barrio" placeholder="Barrio" 
+                    domain="[('district_id', '=', distrito_id)]" invisible="'CR' not in fiscal_country_codes"
+                    options="{'no_open': 1,'no_create': 1, 'no_create_edit': 1}" context="{'district_id': distrito_id}"/>
+            </field>
+            <field name="state_id" position="attributes">
+                <attribute name="placeholder">Province</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>
+

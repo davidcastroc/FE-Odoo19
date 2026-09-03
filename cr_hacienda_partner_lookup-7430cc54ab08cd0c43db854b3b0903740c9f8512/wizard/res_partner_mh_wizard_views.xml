@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_res_partner_mh_wizard_form" model="ir.ui.view">
+        <field name="name">res.partner.mh.wizard.form</field>
+        <field name="model">res.partner.mh.wizard</field>
+
+        <field name="arch" type="xml">
+
+            <form
+                string="Resultado consulta Ministerio de Hacienda"
+                create="0"
+                edit="0"
+                delete="0"
+            >
+
+                <sheet>
+
+                    <group>
+
+                        <group>
+                            <field name="partner_id"/>
+
+                            <field name="identification"/>
+
+                            <field name="name"/>
+
+                            <field name="identification_type"/>
+                        </group>
+
+                        <group>
+
+                            <field name="regime"/>
+
+                            <field name="state"/>
+
+                            <field name="tax_administration"/>
+
+                            <field name="defaulter"/>
+
+                            <field name="omitted"/>
+
+                        </group>
+
+                    </group>
+
+                    <notebook>
+
+                        <page string="Actividades económicas">
+
+                            <field
+                                name="activity_ids"
+                                nolabel="1"
+                            >
+
+                                <list
+                                    create="0"
+                                    edit="0"
+                                    delete="0"
+                                >
+
+                                    <field name="code"/>
+
+                                    <field name="name"/>
+
+                                </list>
+
+                            </field>
+
+                        </page>
+
+                        <page string="Registros especiales">
+
+                            <field
+                                name="registry_ids"
+                                nolabel="1"
+                            >
+
+                                <list
+                                    create="0"
+                                    edit="0"
+                                    delete="0"
+                                >
+
+                                    <field name="registry_type"/>
+
+                                    <field name="due_date"/>
+
+                                    <field name="active_registry"/>
+
+                                </list>
+
+                            </field>
+
+                        </page>
+
+                    </notebook>
+
+                </sheet>
+
+                <footer>
+
+                    <button
+                        name="action_apply_to_partner"
+                        string="Aplicar datos al contacto"
+                        type="object"
+                        class="btn-primary"
+                    />
+
+                    <button
+                        string="Cerrar"
+                        special="cancel"
+                        class="btn-secondary"
+                    />
+
+                </footer>
+
+            </form>
+
+        </field>
+
+    </record>
+
+</odoo>

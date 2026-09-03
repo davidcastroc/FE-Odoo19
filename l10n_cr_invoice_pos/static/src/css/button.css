@@ -1,0 +1,91 @@
+
+.switch {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 20px;
+  top: -36px;
+  margin-left: 65%;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #CED6CC;<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="button_toggle" inherit_id="point_of_sale.assets" name="button add">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/fss_cr_invoice_pos/static/src/css/button.css"/>
+        </xpath>
+    </template>
+</odoo>
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #CED6CC;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  max-width: 13px;
+  max-height: 13px;
+}
+
+.drop-currency {
+
+  width: 74%;
+  padding: 2px 2px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #C9CCD2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit-amount {
+
+  width: 66%;
+  padding: 4px 4px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #C9CCD2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+

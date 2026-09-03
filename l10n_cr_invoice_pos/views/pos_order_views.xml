@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_pos_pos_form" model="ir.ui.view">
+        <field name="name">pos.order.form</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="l10n_cr_action_recreate_document" type="object"
+                        string="Recreate Document" class="oe_highlight"
+                        invisible="not document_id or ind_state != 'rechazado'"/>
+            </xpath>
+            <xpath expr="//header" position="after">
+                <div class="alert alert-info mb-0" role="alert"
+                     invisible="ind_state != 'not_sent' or state not in ['paid', 'done']">
+                    Este servicio de facturación electrónica procesará la factura asincronicamente
+                    <button class="btn btn-link p-0" type="object" name="action_send_to_hacienda"
+                            style="padding: 0; vertical-align: baseline;">Enviar a Hacienda ahora</button>.
+                </div>
+                <div class="alert alert-info mb-0" role="alert"
+                     invisible="ind_state not in ['recibido', 'procesando'] or state not in ['paid', 'done']">
+                    El comprobante aun no ha sido validado <button class="btn btn-link p-0" type="object"
+                                                                   name="action_request_state_to_hacienda"
+                                                                   style="padding: 0; vertical-align: baseline;">
+                    Consultar estado Hacienda ahora</button>.
+                </div>
+            </xpath>
+            <field name="name" position="after">
+                <field name="clave_cr" invisible="country_code != 'CR'"/>
+                <field name="voucher_type_id" invisible="country_code != 'CR'"/>
+                <field name="number"/>
+            </field>
+            <field name="pricelist_id" position="after">
+                <field name="reference_code_id" readonly="1" invisible="1"/>
+                <field name="pos_order_id" invisible="not pos_order_id"/>
+<!--                <field name="QR_code" widget="image" nolabel="1" invisible="country_code != 'CR'"/>-->
+            </field>
+            <xpath expr="//group[@name='order_fields']" position="inside">
+                <field name="document_id" readonly="1" invisible="country_code != 'CR'"/>
+                <field name="reference_nc" readonly="1" invisible="not reference_nc"/>
+                <field name="ind_state" invisible="country_code != 'CR'"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Información de referencia FE" invisible="country_code != 'CR' or not refunded_order_id">
+                    <group>
+                        <group>
+                            <field name="reference_code_id" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="reference_nc" readonly="1"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_pos_order_tree" model="ir.ui.view">
+        <field name="name">pos.order.tree</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_order_tree"/>
+        <field name="arch" type="xml">
+            <field name="pos_reference" position="after">
+                <field name="number" optional="show"/>
+                <field name="voucher_type_id" optional="hidden"/>
+            </field>
+            <field name="state" position="before">
+                <field name="ind_state" widget="badge"
+                       decoration-success="ind_state == 'aceptado'"
+                       decoration-danger="ind_state == 'rechazado'"
+                       decoration-info="ind_state == 'procesando'"/>
+            </field>
+<!--            <field name="amount_total" position="before">-->
+<!--                <field name="amount_tax" sum="Total tax" widget="monetary"/>-->
+<!--            </field>-->
+        </field>
+    </record>
+    <record id="view_pos_order_filter_inherit" model="ir.ui.view">
+        <field name="name">pos.order.list.select.inherit</field>
+        <field name="model">pos.order</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_order_filter"/>
+        <field name="arch" type="xml">
+            <field name="pos_reference" position="replace"/>
+            <field name="name" position="before">
+                <field name="pos_reference"/>
+                <filter name="ind_state" string="No Accepted" domain="[('ind_state', '!=', 'aceptado')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Voucher Type" name="filter_voucher_type_id" context="{'group_by': 'voucher_type_id'}"/>
+                </group>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cr_invoice_receptor_extract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-31 18:20+0000\n"
+"PO-Revision-Date: 2024-10-31 14:21-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model:ir.model.fields,field_description:l10n_cr_invoice_receptor_extract.field_account_journal__alias_auto_extract_xml_only
+msgid "Auto extract XMLs only"
+msgstr "Extracción automática solo de archivos XML"
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_receptor_extract.purchase_order_form_inherit11
+msgid "<span class=\"o_stat_text\">Facturas importadas</span>"
+msgstr ""
+
+#. module: l10n_cr_invoice_receptor_extract
+#. odoo-python
+#: code:addons/l10n_cr_invoice_receptor_extract/models/account_move.py:0
+#, python-format
+msgid "Could not find document type."
+msgstr ""
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model:ir.actions.server,name:l10n_cr_invoice_receptor_extract.invoice_cron_extract_xml_ir_actions_server
+msgid "EXTRACT: Extract XML"
+msgstr "EXTRACTO: Extraer XML"
+
+#. module: l10n_cr_invoice_receptor_extract
+#. odoo-python
+#: code:addons/l10n_cr_invoice_receptor_extract/models/account_move.py:0
+#, python-format
+msgid "Economic Activity: %s not found"
+msgstr ""
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_receptor_extract.view_move_form_inherit
+msgid "Extract Manual XML"
+msgstr "Extraer XML manual"
+
+#. module: l10n_cr_invoice_receptor_extract
+#. odoo-python
+#: code:addons/l10n_cr_invoice_receptor_extract/models/account_move.py:0
+#, python-format
+msgid "Identification Type:  not recognized"
+msgstr "Tipo de identificación: no reconocido"
+
+#. module: l10n_cr_invoice_receptor_extract
+#. odoo-python
+#: code:addons/l10n_cr_invoice_receptor_extract/models/purchase_order.py:0
+#, python-format
+msgid "Imported Invoice"
+msgstr ""
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model:ir.model.fields,field_description:l10n_cr_invoice_receptor_extract.field_purchase_order__invoice_import_count
+msgid "Invoice Import Count"
+msgstr ""
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model:ir.model,name:l10n_cr_invoice_receptor_extract.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_cr_invoice_receptor_extract
+#. odoo-python
+#: code:addons/l10n_cr_invoice_receptor_extract/models/account_move.py:0
+#, python-format
+msgid "No attachment XML was provided"
+msgstr "No se proporcionó ningún archivo XML adjunto"
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model:ir.model,name:l10n_cr_invoice_receptor_extract.model_purchase_order
+#: model:ir.model.fields,field_description:l10n_cr_invoice_receptor_extract.field_account_bank_statement_line__purchase_order_id
+#: model:ir.model.fields,field_description:l10n_cr_invoice_receptor_extract.field_account_move__purchase_order_id
+#: model:ir.model.fields,field_description:l10n_cr_invoice_receptor_extract.field_account_payment__purchase_order_id
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#. module: l10n_cr_invoice_receptor_extract
+#: model_terms:ir.ui.view,arch_db:l10n_cr_invoice_receptor_extract.purchase_order_form_inherit11
+msgid "View Imported Invoices"
+msgstr "Ver facturas importadas"
+
+#. module: l10n_cr_invoice_receptor_extract
+#. odoo-python
+#: code:addons/l10n_cr_invoice_receptor_extract/models/account_move.py:0
+#, python-format
+msgid "Voucher Type not found: "
+msgstr ""

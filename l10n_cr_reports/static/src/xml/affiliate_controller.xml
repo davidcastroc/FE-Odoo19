@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="l10n_cr_reports.AffiliateView">
+        <div t-att-class="props.className" t-ref="root">
+            <Layout className="model.useSampleModel ? 'o_view_sample_data' : ''" display="props.display">
+                <t t-set-slot="layout-actions">
+                    <SearchBar/>
+                </t>
+                <t t-if="model.hasData()">
+                    <t t-component="props.Renderer" model="model"
+                       onFilterEconomicActivity="(row) => this.onFilterEconomicActivity(row)"
+                       onRowClicked="(row, measure) => this.onRowClicked(row, measure)"/>
+                </t>
+            </Layout>
+        </div>
+    </t>
+</templates>

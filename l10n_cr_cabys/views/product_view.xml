@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.common.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='categ_id']" position="after">
+<!--                <field name="code_type_id" options="{'no_create': True}" invisible="fiscal_country_codes != 'CR'"/>-->
+<!--                <button name="search_cabys" colspan="2" nolabel="1" invisible="cabys_relacionados_id != False"-->
+<!--                        string="Buscar Códigos CAByS relacionados al producto" type="object" class="oe_edit_only oe_highlight oe_right"/>-->
+                <field name="product_cabys_id" invisible="fiscal_country_codes != 'CR'"/>
+<!--                <field name="cabys_code" invisible="product_cabys_id or fiscal_country_codes != 'CR'"/>-->
+<!--                <button name="search_code" colspan="2" nolabel="1" string="Buscar Código CAByS" type="object"-->
+<!--                        class="oe_edit_only oe_highlight oe_right"-->
+<!--                        invisible="not product_cabys_id and not cabys_code"/>-->
+            </xpath>
+        </field>
+    </record>
+    <record id="product_template_tree_view_inherit" model="ir.ui.view">
+        <field name="name">product.template.tree.view.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='default_code']" position="after">
+                <field name="product_cabys_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

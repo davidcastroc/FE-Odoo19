@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+    <t t-name="l10n_cr_invoice_pos.OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('pos-receipt')]" position="inside">
+            <t t-if="env.services.pos.config.l10n_cr_fiscal_journal">
+                <di style="margin: 5px; padding-bottom:1px; border-top: 1px dashed black;">
+                    <p t-if="props.data.clave_cr" style="font-size: 10px; margin: 1px; padding-bottom:1px">
+                        Emitida conforme a lo establecido en la Resolución de Facturación Electrónica,
+                        MH-DGT-RES-0027-2024 del 19 de noviembre de 2024 de la Dirección General de Tributación Directa.
+                    </p>
+                </di>
+                <div>
+                    <div t-if="props.data.QR_code" style="text-align: center; padding:0px; margin:0px;">
+                        <img class="pos-receipt-logo" t-att-src="'data:image/png;base64,' + props.data.QR_code"/>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

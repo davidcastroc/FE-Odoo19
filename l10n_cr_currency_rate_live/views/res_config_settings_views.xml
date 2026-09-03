@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherited" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherited</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="////field[@name='module_currency_rate_live']/../.." position="after">
+                <block title="Tipo de Cambio automático" name="do_currency_setting_container">
+                    <setting id="do_main_currency" help="Main currency of your company">
+                        <div class="content-group">
+                            <div class="text-muted">
+                                Actualizar las tasas de cambio automáticamente según el Banco Central de Costa Rica
+                            </div>
+                            <div class="row">
+                                <label string="Interval" for="l10n_cr_currency_interval_unit"
+                                       class="col-md-3 o_light_label"/>
+                                <field name="l10n_cr_currency_interval_unit"/>
+                            </div>
+                            <div class="row">
+                                <label string="Base" for="l10n_cr_currency_base" class="col-md-3 o_light_label"/>
+                                <field name="l10n_cr_currency_base"/>
+                            </div>
+                            <div class="row">
+                                <label string="Offset" for="l10n_cr_rate_offset" class="col-md-3 o_light_label"/>
+                                <field name="l10n_cr_rate_offset"/>
+                            </div>
+                            <div class="row">
+                                <label string="Next Run" for="l10n_cr_currency_next_execution_date"
+                                       class="col-md-3 o_light_label"/>
+                                <field name="l10n_cr_currency_next_execution_date"/>
+                                <button name="l10n_cr_update_currency_rates" type="object" class="btn-link">
+                                    <i title="Update now" class="fa fa-fw fa-refresh"></i>
+                                </button>
+                            </div>
+                            <div class="row">
+                                <label string="Last Sync Date" for="l10n_cr_last_currency_sync_date" class="col-md-3 o_light_label"
+                                       invisible="not l10n_cr_last_currency_sync_date"/>
+                                <field name="l10n_cr_last_currency_sync_date"
+                                       invisible="not l10n_cr_last_currency_sync_date"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

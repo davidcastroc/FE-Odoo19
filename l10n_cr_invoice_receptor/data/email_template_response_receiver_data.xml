@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="0">
+    <record id="email_template_response_receiver" model="mail.template">
+        <field name="name">ELECTRONIC VOUCHER ACCEPTED</field>
+        <field name="email_from">{{(user.email or '')}}</field>
+        <field name="subject">COMPROBANTE ELECTRONICO ACEPTADO</field>
+        <field name="email_to">{{object.partner_id.email}}</field>
+        <field name="lang">{{object.partner_id.lang}}</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="body_html" type="html">
+            <div>
+                The electronic voucher
+                <t t-if="object.l10n_cr_document_number">
+                    <t t-out="object.l10n_cr_document_number or ''">00100011080000000010</t>,
+                </t>
+                has be accepted
+                <br />
+                Details of document:
+                <br />
+                <ul>
+                    <li>Client: <t t-out="object.partner_id.name">Brandon Freeman</t></li>
+                    <li>Voucher Type: <t t-out="object.voucher_type_id.name">Factura electrónica</t></li>
+<!--                    <li>Issue Date: <t t-out="object.voucher_type_id.name">01-01-2025</t></li>-->
+                    <li>Document Number: <t t-out="object.l10n_cr_document_number">00100011080000000010</t></li>
+                    <li>Document Key: <t t-out="object.l10n_cr_document_name">50614072500310188118800100011080000000010110494803</t></li>
+                    <li>Total: <t t-out="object.xml_amount_total">$ 100.00</t></li>
+                    <li>Accepted Date: <t t-out="object.l10n_cr_acknowledgement_date">01-01-2025</t></li>
+                </ul>
+            </div>
+        </field>
+    </record>
+</odoo>

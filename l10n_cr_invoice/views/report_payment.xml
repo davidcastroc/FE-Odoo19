@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_payment_document" inherit_id="account.report_payment_receipt_document">
+        <xpath expr="//div[@name='date']" position="after">
+<!--            <t t-set="cfdi" t-value="values.get('cfdi')"/>-->
+<!--            <div t-if="cfdi and o.company_id.vat != cfdi['supplier_rfc']" class="col-6" name="l10n_mx_edi_supplier_rfc">-->
+<!--                <span>XML VAT: </span>-->
+<!--                <span t-out="cfdi['supplier_rfc']"/>-->
+<!--            </div>-->
+<!--            <div t-if="cfdi and o.l10n_cr_payment_method_id" class="col-6" name="l10n_cr_payment_method">-->
+            <div t-if="o.l10n_cr_payment_method_id" class="col-6" name="l10n_cr_payment_method">
+                <strong>Payment Way:</strong>
+                <span t-out="'%s - %s' % (o.l10n_cr_payment_method_id.code, o.l10n_cr_payment_method_id.name)"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

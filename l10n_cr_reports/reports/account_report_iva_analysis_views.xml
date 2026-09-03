@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ecf_document_analysis_tree_tree" model="ir.ui.view">
+        <field name="name">ecf.document.analysis.tree</field>
+        <field name="model">account.report.iva.analysis</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="id" optional="hide"/>
+                <field name="move_id"/>
+                <field name="name"/>
+                <field name="economic_activity_id"/>
+                <field name="invoice_date" optional="hide"/>
+                <field name="detailed_type_product" optional="hide"/>
+                <field name="fiscal_position_id" optional="hide"/>
+                <field name="company_id" optional="hide"/>
+                <field name="currency_id" optional="hide"/>
+                <field name="company_currency_id" optional="hide"/>
+                <field name="taxed_base_05" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_amount_05" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_base_1" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_amount_1" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_base_2" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_amount_2" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_base_4" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_amount_4" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_base_8" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_amount_8" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_base_13" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="taxed_amount_13" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="exempt_amount" sum="Total" widget="monetary" options="{'currency_field': 'company_currency_id'}"/>
+                <field name="state" optional="hide"/>
+            </list>
+        </field>
+    </record>
+    <record id="crm_lead_analysis_view_search" model="ir.ui.view">
+        <field name="name">crm.lead.analysis.view.search</field>
+        <field name="model">account.report.iva.analysis</field>
+        <field name="arch" type="xml">
+            <search string="Lead Analysis">
+                <field name="name"/>
+
+                <filter string="Services" name="services" domain="[('detailed_type_product', '=', 'service')]"/>
+                <filter string="Products" name="products" domain="[('detailed_type_product', '=', 'consu')]"/>
+                <separator/>
+                <filter string="Creation Date" name="creation_date" date="invoice_date"/>
+                <group expand="1" string="Group By">
+                    <filter string="Type Product" name="group_by_detailed_type_product" context="{'group_by': 'detailed_type_product'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="ecf_document_analysis_action" model="ir.actions.act_window">
+        <field name="name">IVA Analysis</field>
+        <field name="res_model">account.report.iva.analysis</field>
+        <field name="view_mode">list,pivot</field>
+    </record>
+
+<!--    <menuitem id="l10n_cr_reports_iva_analysis_menu"-->
+<!--              action="ecf_document_analysis_action"-->
+<!--              name="Analisis IVA" parent="account.account_reports_management_menu" sequence="99"/>-->
+
+    <record id="crm_lead_analysis_view_funnel_search" model="ir.ui.view">
+        <field name="name">crm.lead.analysis.view.funnel.search</field>
+        <field name="model">account.report.iva.analysis</field>
+        <field name="arch" type="xml">
+            <search string="Lead Analysis">
+                <field name="name"/>
+                <filter string="Creation Date" name="creation_date" date="invoice_date"/>
+                <filter string="Services" name="services" domain="[('detailed_type_product', '=', 'service')]"/>
+                <filter string="Products" name="products" domain="[('detailed_type_product', '=', 'consu')]"/>
+                <group expand="1" string="Group By">
+                    <filter string="Type Product" name="group_by_detailed_type_product" context="{'group_by': 'detailed_type_product'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="todo_mytask_view_todo" model="ir.ui.view">
+        <field name="name">todo.mytask.view.todo</field>
+        <field name="model">account.report.iva.analysis</field>
+        <field name="arch" type="xml">
+            <affiliate string="Dashboard"></affiliate>
+        </field>
+    </record>
+    <record id="todo_my_dashboard_action" model="ir.actions.act_window">
+        <field name="name">IVA Sales Analysis</field>
+        <field name="res_model">account.report.iva.analysis</field>
+        <field name="view_mode">affiliate</field>
+        <field name="search_view_id" ref="crm_lead_analysis_view_funnel_search"/>
+        <field name="domain">[('move_type', 'in', ['out_invoice', 'out_refund']),
+            ('company_id', '=', allowed_company_ids[0])]</field>
+    </record>
+    <record id="l10n_cr_report_iva_purchase_action" model="ir.actions.act_window">
+        <field name="name">IVA Purchase Analysis</field>
+        <field name="res_model">account.report.iva.analysis</field>
+        <field name="view_mode">affiliate</field>
+        <field name="search_view_id" ref="crm_lead_analysis_view_funnel_search"/>
+        <field name="domain">[('move_type', 'in', ['in_invoice', 'in_refund']),
+            ('company_id', '=', allowed_company_ids[0])]</field>
+    </record>
+
+    <menuitem id="menu_todo_my_activity_dashboard" parent="account.account_reports_management_menu" action="todo_my_dashboard_action"/>
+    <menuitem id="menu_report_iva_purchase" parent="account.account_reports_management_menu" action="l10n_cr_report_iva_purchase_action"/>
+
+</odoo>

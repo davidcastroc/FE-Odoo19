@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="view_pos_config_electronic_invoice_form" model="ir.ui.view">
+		<field name="name">pos.config.electronic.invoice.form</field>
+		<field name="model">pos.config</field>
+		<field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+		<field name="arch" type="xml">
+            <xpath expr="//setting[@id='other_devices']" position="after">
+                <div class="col-12 col-lg-6 o_setting_box" id="fe_extras_terminal">
+                    <div class="content-group mt16">
+                        <div invisible="not l10n_cr_fiscal_journal">
+                            <label string="Terminal" for="terminal_id" class="col-lg-3 o_light_label"/>
+                            <field name="terminal_id"
+                                   readonly="has_active_session"
+                                   domain="[('company_id', '=', company_id), ('state', '=', 'active')]"/>
+                            <field name="company_id" invisible="1"/>
+                            <field name="l10n_cr_fiscal_journal" invisible="1"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>        
+		</field>
+	</record>
+</odoo>
+
