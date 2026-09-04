@@ -88,7 +88,7 @@
 <!--                        domain="[('date_expiration', '>=', (context_today() + relativedelta(day=1)).strftime('%Y-%m-%d')),-->
 <!--                                 ('date_expiration', '&lt;', (context_today() + relativedelta(months=1, day=1)).strftime('%Y-%m-%d'))]"/>-->
 
-<!--                <group expand="0" string="Agrupar Por">-->
+<!--                <group>-->
 <!--                    <filter string="Cliente" name="group_partner" context="{'group_by': 'partner_id'}"/>-->
 <!--                    <filter string="Institución" name="group_institution" context="{'group_by': 'institution_id'}"/>-->
 <!--                    <filter string="Estado" name="group_state" context="{'group_by': 'state'}"/>-->

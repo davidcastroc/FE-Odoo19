@@ -5,9 +5,9 @@
         <field name="model">account.journal</field>
         <field name="inherit_id" ref="account.view_account_journal_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//div[@name='edit_alias']" position="after">
+            <field name="alias_domain_id" position="after">
                 <field name="alias_auto_extract_xml_only"/>
-            </xpath>
+            </field>
         </field>
     </record>
 </odoo>

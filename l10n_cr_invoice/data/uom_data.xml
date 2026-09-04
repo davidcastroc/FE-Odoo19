@@ -3,288 +3,216 @@
     <data noupdate="0">
 
         <!--
-        Resource: uom.category
+            Odoo 19 eliminó categorías de unidades.
+            Para las UoM estándar solo añadimos/actualizamos el código de Hacienda,
+            nombre localizado y estado activo; conservamos la estructura de conversión
+            nativa definida por Odoo 19.
         -->
-        <record id="product_uom_categ_area" model="uom.category">
-            <field name="name">Area</field>
-            <field name="measure_type">area</field>
-        </record>
-        <record id="product_uom_categ_service" model="uom.category">
-            <field name="name">Services</field>
-            <field name="measure_type">services</field>
-        </record>
-        <record id="product_uom_categ_rent" model="uom.category">
-            <field name="name">Rent</field>
-            <field name="measure_type">rent</field>
-        </record>
 
-        <!--
-            Resource: uom.uom
-        -->
         <record id="uom.product_uom_cm" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_length"/>
             <field name="name">Centímetro</field>
             <field name="code">cm</field>
-            <field name="uom_type">smaller</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_day" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_wtime"/>
             <field name="name">Día(s)</field>
             <field name="code">d</field>
             <field name="active">True</field>
-            <field name="uom_type">reference</field>
         </record>
+
         <record id="uom.product_uom_gram" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_kgm"/>
             <field name="name">Gramo</field>
             <field name="code">g</field>
-            <field name="uom_type">smaller</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_gal" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_vol"/>
             <field name="name">Galón</field>
             <field name="code">Gal</field>
-            <field name="uom_type">bigger</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_hour" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_wtime"/>
             <field name="name">Hora(s)</field>
             <field name="code">h</field>
-            <field name="uom_type">smaller</field>
             <field name="active">True</field>
         </record>
+
+        <!-- Se mantiene el XML-ID histórico del módulo para no romper referencias. -->
         <record id="product_uom_minute" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_wtime"/>
             <field name="name">Minuto(s)</field>
             <field name="code">min</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="uom.product_uom_hour"/>
+            <field name="relative_factor" eval="0.0166667"/>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_kgm" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_kgm"/>
             <field name="name">Kilogramo</field>
             <field name="code">kg</field>
-            <field name="uom_type">reference</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_km" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_length"/>
             <field name="name">Kilómetro</field>
             <field name="code">km</field>
-            <field name="uom_type">bigger</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_litre" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_vol"/>
             <field name="name">Litro</field>
             <field name="code">L</field>
-            <field name="uom_type">reference</field>
             <field name="active">True</field>
         </record>
+
         <record id="product_uom_mililitro" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_vol"/>
             <field name="name">Mililitro</field>
             <field name="code">mL</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="uom.product_uom_milliliter"/>
+            <field name="relative_factor" eval="1.0"/>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_inch" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_length"/>
             <field name="name">Pulgada</field>
             <field name="code">ln</field>
-            <field name="uom_type">smaller</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_meter" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_length"/>
             <field name="name">Metro</field>
             <field name="code">m</field>
-            <field name="uom_type">reference</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_oz" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_kgm"/>
             <field name="name">Onzas</field>
             <field name="code">Oz</field>
-            <field name="uom_type">smaller</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_ton" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_kgm"/>
             <field name="name">Tonelada</field>
             <field name="code">t</field>
-            <field name="uom_type">bigger</field>
             <field name="active">True</field>
         </record>
+
         <record id="uom.product_uom_unit" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_unit"/>
             <field name="name">Unidad</field>
             <field name="code">Unid</field>
-            <field name="uom_type">reference</field>
             <field name="active">True</field>
         </record>
+
         <record id="product_uom_mcubico" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_vol"/>
             <field name="name">Metro Cubico</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">m3</field>
-            <field name="uom_type">bigger</field>
+            <field name="relative_uom_id" ref="uom.product_uom_litre"/>
+            <field name="relative_factor" eval="1000.0"/>
+            <field name="active">True</field>
         </record>
+
+        <!-- Servicios: grupo independiente en Odoo 19 mediante una UoM raíz. -->
         <record id="product_uom_sp" model="uom.uom">
-            <field name="category_id" ref="product_uom_categ_service"/>
             <field name="name">Servicios Profesionales</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">Sp</field>
-            <field name="uom_type">reference</field>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
         <record id="product_uom_spe" model="uom.uom">
-            <field name="category_id" ref="product_uom_categ_service"/>
             <field name="name">Servicios Personales</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">Spe</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="product_uom_sp"/>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
         <record id="product_uom_st" model="uom.uom">
-            <field name="category_id" ref="product_uom_categ_service"/>
             <field name="name">Servicios Técnicos</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">St</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="product_uom_sp"/>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
         <record id="product_uom_os" model="uom.uom">
-            <field name="category_id" ref="product_uom_categ_service"/>
             <field name="name">Otro Tipo de Servicio</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">Os</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="product_uom_sp"/>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
+        <!-- Unidades conceptuales equivalentes a una unidad estándar. -->
         <record id="product_uom_i" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_unit"/>
             <field name="name">Intereses</field>
             <field name="code">I</field>
-            <field name="uom_type">bigger</field>
+            <field name="relative_uom_id" ref="uom.product_uom_unit"/>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
         <record id="product_uom_com" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_unit"/>
             <field name="name">Comisiones</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">Cm</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="uom.product_uom_unit"/>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
+        <!-- Alquileres: grupo independiente. -->
         <record id="product_uom_alc" model="uom.uom">
-            <field name="category_id" ref="product_uom_categ_rent"/>
             <field name="name">Alquiler de Uso Comercial</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">Alc</field>
-            <field name="uom_type">reference</field>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
         <record id="product_uom_al" model="uom.uom">
-            <field name="category_id" ref="product_uom_categ_rent"/>
             <field name="name">Alquiler de Uso Habitacional</field>
-            <field name="factor" eval="1.0"/>
-            <field name="rounding" eval="0.01"/>
             <field name="code">Al</field>
-            <field name="uom_type">smaller</field>
+            <field name="relative_uom_id" ref="product_uom_alc"/>
+            <field name="relative_factor" eval="1.0"/>
+            <field name="active">True</field>
         </record>
+
+        <!-- UoM estándar inactivas en Odoo, conservamos código Hacienda. -->
         <record id="uom.product_uom_qt" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_vol"/>
             <field name="name">Cuarto(s) de Galón</field>
             <field name="code">cuarto(s) de galón</field>
-            <field name="uom_type">smaller</field>
             <field name="active">False</field>
         </record>
+
         <record id="uom.product_uom_dozen" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_unit"/>
             <field name="name">Docena(s)</field>
             <field name="code">Docena(s)</field>
-            <field name="uom_type">bigger</field>
             <field name="active">False</field>
         </record>
-       <record id="uom.product_uom_floz" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_vol"/>
+
+        <record id="uom.product_uom_floz" model="uom.uom">
             <field name="name">fl oz</field>
             <field name="code">fl oz</field>
-            <field name="uom_type">smaller</field>
             <field name="active">False</field>
         </record>
+
         <record id="uom.product_uom_lb" model="uom.uom">
-            <field name="category_id" ref="uom.product_uom_categ_kgm"/>
             <field name="name">Libra(s)</field>
             <field name="code">libra(s)</field>
-            <field name="uom_type">smaller</field>
             <field name="active">False</field>
         </record>
+
         <record id="uom.product_uom_mile" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_length"/>
             <field name="name">Milla(s)</field>
             <field name="code">milla(s)</field>
-            <field name="uom_type">bigger</field>
             <field name="active">False</field>
         </record>
+
         <record id="uom.product_uom_foot" model="uom.uom">
-            <field name="category_id" ref="uom.uom_categ_length"/>
             <field name="name">Pie(s)</field>
             <field name="code">pie(s)</field>
-            <field name="uom_type">smaller</field>
             <field name="active">False</field>
         </record>
-<!--        <record id="product_uom_mcuadrado" model="uom.uom">-->
-<!--            <field name="category_id" ref="product_uom_categ_area"/>-->
-<!--            <field name="name">Metro Cuadrado</field>-->
-<!--            <field name="factor" eval="1.0"/>-->
-<!--            <field name="rounding" eval="0.01"/>-->
-<!--            <field name="code">m2</field>-->
-<!--            <field name="uom_type">smaller</field>-->
-<!--        </record>-->
-<!--        <record id="product_uom_acv" model="uom.uom">-->
-<!--            <field name="category_id" ref="product_uom_categ_service"/>-->
-<!--            <field name="name">Activo Virtual</field>-->
-<!--            <field name="factor" eval="1.0"/>-->
-<!--            <field name="rounding" eval="0.01"/>-->
-<!--            <field name="code">acv</field>-->
-<!--            <field name="uom_type">smaller</field>-->
-<!--        </record>-->
-<!--        <record id="product_uom_fa" model="uom.uom">-->
-<!--            <field name="category_id" ref="product_uom_categ_area"/>-->
-<!--            <field name="name">Fanega de café</field>-->
-<!--            <field name="factor" eval="1.0"/>-->
-<!--            <field name="rounding" eval="0.01"/>-->
-<!--            <field name="code">acv</field>-->
-<!--            <field name="uom_type">smaller</field>-->
-<!--        </record>-->
-<!--        <record id="product_uom_cc" model="uom.uom">-->
-<!--            <field name="category_id" ref="product_uom_categ_area"/>-->
-<!--            <field name="name">Cajuela de café</field>-->
-<!--            <field name="factor" eval="1.0"/>-->
-<!--            <field name="rounding" eval="0.01"/>-->
-<!--            <field name="code">cc</field>-->
-<!--            <field name="uom_type">smaller</field>-->
-<!--        </record>-->
-<!--        <record id="product_uom_cu" model="uom.uom">-->
-<!--            <field name="category_id" ref="product_uom_categ_area"/>-->
-<!--            <field name="name">Cuartillos de café</field>-->
-<!--            <field name="factor" eval="1.0"/>-->
-<!--            <field name="rounding" eval="0.01"/>-->
-<!--            <field name="code">cu</field>-->
-<!--            <field name="uom_type">smaller</field>-->
-<!--        </record>-->
-<!--        <record id="product_uom_qq" model="uom.uom">-->
-<!--            <field name="category_id" ref="product_uom_categ_area"/>-->
-<!--            <field name="name">Quintal</field>-->
-<!--            <field name="factor" eval="1.0"/>-->
-<!--            <field name="rounding" eval="0.01"/>-->
-<!--            <field name="code">qq</field>-->
-<!--            <field name="uom_type">smaller</field>-->
-<!--        </record>-->
+
     </data>
 </odoo>

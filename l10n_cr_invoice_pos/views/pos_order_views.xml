@@ -83,7 +83,7 @@
             <field name="name" position="before">
                 <field name="pos_reference"/>
                 <filter name="ind_state" string="No Accepted" domain="[('ind_state', '!=', 'aceptado')]"/>
-                <group expand="0" string="Group By">
+                <group>
                     <filter string="Voucher Type" name="filter_voucher_type_id" context="{'group_by': 'voucher_type_id'}"/>
                 </group>
             </field>

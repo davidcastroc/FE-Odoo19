@@ -200,7 +200,7 @@
                 <filter name="customer_document" string="Customer Document" domain="[('invoice_type', 'in', ('out_invoice', 'out_refund', 'out_ticket'))]"/>
                 <filter name="supplier_document" string="Supplier Document" domain="[('invoice_type', 'in', ('in_invoice', 'in_refund', 'in_ticket'))]"/>
                 <filter string="Create Date" name="create_date" date="create_date"/>
-                <group expand="0" string="Group By">
+                <group>
                     <filter string="Voucher Type" name="filter_voucher_type_id" context="{'group_by': 'voucher_type_id'}"/>
                     <filter string="Condition Sale" name="filter_payment_term_type_id" context="{'group_by': 'payment_term_type_id'}"/>
                     <filter string="State" name="filter_ind_state" context="{'group_by': 'ind_state'}"/>
